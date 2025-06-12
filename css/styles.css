@@ -1,0 +1,255 @@
+html, body{ 
+  margin: 0; 
+  padding: 0;
+  font-family: ;
+}
+
+/*estos son los estilos para el boton de acción de la página*/
+
+.button,
+.button::before,
+.button::after,
+.button span,
+.button span::before,
+.button span::after
+{
+  transition: all ease .5s;
+}
+
+.button{
+  position: relative;
+  display: inline-block;
+  padding: 0.3em;
+  margin: 1em;
+  border: solid 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover
+{
+  box-shadow: 0 0 5em .5em rgba(50,50,150,0.5);
+}
+
+.button span
+{
+  display: inline-block;
+  width: 100%;
+  padding: 0.6em 2em;
+}
+
+.button:hover span
+{
+  background-color: #fff;
+  color: #112;
+}
+
+.button::before,
+.button::after,
+.button span::before,
+.button span::after
+{
+  content: '';
+  position: absolute;
+  border: 1px;
+}
+
+.button::before,
+.button span::before
+{
+  border-style: solid none;  
+}
+
+.button::before,
+.button span::after{      
+  left: 0;
+  top: -0.4em;
+  width: 100%; 
+  height: calc(100% + 0.8em);
+}
+
+.button::after,
+.button span::after
+{
+  border-style: none solid;   
+}
+
+.button::after,
+.button span::before
+{
+  top: 0;
+  left: -0.4em;
+  height: 100%;
+  width: calc(100% + 0.8em); 
+}
+
+.button:hover::after,
+.button:hover span::after
+{
+  transform: scaleY(0);
+}
+
+.button:hover::before,
+.button:hover span::before
+{
+  transform: scaleX(0);
+}
+
+.button:hover span::after,
+.button:hover span::before
+{
+  opacity: 0;
+}
+
+
+/*estos son los estilos para el footer en la página Web*/
+
+.footer-dark {
+  padding:10px 0px;
+  color:#f0f9ff;
+  background-color:#0165f9;
+}
+
+.footer-dark h3 {
+  text-align: center;
+  margin-top:5px;
+  margin-bottom:0px;
+  font-weight:bold;
+  font-size:25px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 20px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity:0.5;
+  color: yellow;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.5;
+  font-size:13px;
+  margin-bottom:0;
+}
+
+.titulo-tarjetas{
+  text-align: center;
+}
+
+.contenido-tarjetas{
+  text-align: justify;
+}
+
+.fondo-1{
+  background: #A9E0F9;
+}
+
+
+
+
+.imgefect{
+  transition: all 1.2s;
+}
+
+.imgefect:hover{
+  transform: scale(1.15);
+}
+
+
+#galeria img{
+  width: 100%;
+  height: 300px;
+}
+
+
+.fondo-gris{
+  background: #c8c8c8;
+}
+
+.fondo-morado{
+  background: #06165B;
+}
+
+.text-blanco{
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
